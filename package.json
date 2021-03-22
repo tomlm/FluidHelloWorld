@@ -10,10 +10,10 @@
         "build": "webpack --env prod --env clean",
         "build:bot": "webpack --env node",
         "build:dev": "webpack --env.clean",
-        "start": "concurrently \"npm:start:server\" \"npm:start:client\" ",
+        "start": "concurrently \"npm:start:server\" \"npm:start:client\" \"npm:start:bot\"",
         "start:client": "webpack serve",
         "start:server": "tinylicious",
-        "start:bot": "node dist/server.js"
+        "start:bot": "node dist/bot.js"
     },
     "dependencies": {
         "@fluid-experimental/data-objects": "^0.36.0",
